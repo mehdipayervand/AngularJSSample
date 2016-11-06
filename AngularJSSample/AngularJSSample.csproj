@@ -89,9 +89,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Script\angular.min.js" />
     <Content Include="Script\app.js" />
+    <Content Include="Script\bootstrap.min.js" />
     <Content Include="Script\jquery-1.10.2.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -118,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="fonts\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
