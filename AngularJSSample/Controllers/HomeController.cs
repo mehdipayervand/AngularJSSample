@@ -19,5 +19,10 @@ namespace AngularJSSample.Controllers
             return View();
         }
 
+        public ActionResult L04_MVCArchitecture()
+        {
+            return View();
+        }
+
     }
 }
