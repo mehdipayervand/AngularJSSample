@@ -8,12 +8,16 @@ namespace AngularJSSample.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
-
-
             return View();
         }
+
+
+        public ActionResult L03_EnvironmentSetup()
+        {
+            return View();
+        }
+
     }
 }
