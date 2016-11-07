@@ -113,6 +113,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\L03_EnvironmentSetup.cshtml" />
     <Content Include="Views\Home\L04_MVCArchitecture.cshtml" />
+    <Content Include="Views\Home\L05_FirstApplication.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -24,5 +24,12 @@ namespace AngularJSSample.Controllers
             return View();
         }
 
+public ActionResult L05_FirstApplication()
+        {
+            return View();
+        }
+
+
+
     }
 }
