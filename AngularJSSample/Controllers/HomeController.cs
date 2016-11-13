@@ -39,7 +39,10 @@ namespace AngularJSSample.Controllers
             return View();
         }
 
-
+        public ActionResult L08_Controllers()
+        {
+            return View();
+        }
 
 
     }

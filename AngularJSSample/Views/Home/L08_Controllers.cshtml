@@ -1,0 +1,33 @@
+﻿
+
+<div ng-app="mainApp" ng-controller="studentController">
+
+    <h2>AngularJS - Controller</h2>
+
+    Enter first name: <input type="text" ng-model="student.firstName"><br>
+    Enter last name: <input type="text" ng-model="student.lastName"><br>
+    <br>
+    You are entering: {{student.fullName()}}
+
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        var mainApp = angular.module("mainApp", []);
+        mainApp.controller("studentController", function ($scope) {
+            $scope.student = {
+                firstName: "Mahesh",
+                lastName: "Parashar",
+
+                fullName: function () {
+                    var studentObject;
+                    studentObject = $scope.student;
+                    return studentObject.firstName + " " + studentObject.lastName;
+                }
+            };
+        });
+    </script>
+
+}
