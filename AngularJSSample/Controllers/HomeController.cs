@@ -49,5 +49,10 @@ namespace AngularJSSample.Controllers
             return View();
         }
 
+        public ActionResult L10_Tables()
+        {
+            return View();
+        }
+
     }
 }

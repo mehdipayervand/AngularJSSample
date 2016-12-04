@@ -118,6 +118,7 @@
     <Content Include="Views\Home\L08_Controllers.cshtml" />
     <None Include="Views\Home\L07_Expressions.cshtml" />
     <Content Include="Views\Home\L09_Filters.cshtml" />
+    <Content Include="Views\Home\L10_Tables.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

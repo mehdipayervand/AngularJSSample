@@ -1,0 +1,69 @@
+﻿
+
+<div ng-app="mainApp" ng-controller="studentController">
+
+    <h2>AngularJS - Tables</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr ng-repeat="subject in student.subjects">
+            <td>{{ subject.name }}</td>
+            <td>{{ subject.marks }}</td>
+        </tr>
+    </table>
+
+</div>
+
+
+@section styles
+{
+    <style>
+        table, th, td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+            table tr:nth-child(odd) {
+                background-color: #f2f2f2;
+            }
+
+            table tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+    </style>
+}
+
+@section scripts
+{
+    <script>
+        var mainApp = angular.module("mainApp", []);
+
+        mainApp.controller('studentController', function ($scope) {
+            $scope.student = {
+                firstName: "Mahesh",
+                lastName: "Parashar",
+                fees: 500,
+
+                subjects: [
+                   { name: 'Physics', marks: 70 },
+                   { name: 'Chemistry', marks: 80 },
+                   { name: 'Math', marks: 65 },
+                   { name: 'English', marks: 75 },
+                   { name: 'Hindi', marks: 67 }
+                ],
+
+                fullName: function () {
+                    var studentObject;
+                    studentObject = $scope.student;
+                    return studentObject.firstName + " " + studentObject.lastName;
+                }
+            };
+        });
+    </script>
+
+}
